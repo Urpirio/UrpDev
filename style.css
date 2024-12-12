@@ -1,18 +1,22 @@
 body{
     margin: 0;
+    font-family: "Roboto", sans-serif;
 }
 header{
     display: flex;
     flex-direction: column;
     height: 8cm;
-    background-color: antiquewhite;
+    width: 100%;
+    background-image: url(https://www.inicionet.com/wp-content/uploads/2019/02/banner-programacion-1030x450.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
 }
 .header-section1{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid black;
-    background-color: white;
+    color: white;
     
 }
 .header-section1 div{
@@ -29,16 +33,21 @@ header{
 .header-section1-nav{
     display: flex;
     justify-content: space-between;
-    width: 8cm;
+    
 }
 .header-section1 div nav ul{
     list-style: none;
     appearance: none;
     display: flex;
+    justify-content: space-around;
+}
+.header-section1 div nav ul a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
 }
 .header-section1 div nav ul li{
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 10px;
 }
 .header-section1 div nav ul li ul{
     display: none;
@@ -48,16 +57,17 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
     height: 8cm;
 }
 .header-section2 div h1{
-    font-size: 35px;
+    font-size: 60px;
+    margin-bottom: -2px;
 }
 .header-section2 div button{
     border: none;
     background: none;
-    font-size: 20px;
+    font-size: 15px;
+    color: white;
 }
 main{
     display: flex;
@@ -76,16 +86,16 @@ main{
     align-items: center;
     width: 50%;
     border: 1px solid black;
-    background-color: blueviolet;
+    background-color: black;
 }
 .main-section1-section1 form{
     display: flex;
     flex-direction: column;
-    background-color: aquamarine;
+    background-color: rgba(255, 255, 255, 0.327);
     justify-content: center;
     align-items: center;
     border: 1px solid black;
-    height: 16cm;
+    height: 18cm;
     width: 12cm;
 }
 .main-section1-section1 form div{
@@ -94,7 +104,7 @@ main{
 }
 .div-section{
     width: 50%;
-    background-color: brown;
+    background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -102,27 +112,69 @@ main{
 .main-section1-section2{
     display: flex;
     flex-direction: column;
-    width: 10cm;
-    border: 1px solid black;
+    width: 12cm;
+    height: 18cm;
     justify-content: center;
     align-items: center;
-    background-color: darkgoldenrod;
+    background-color:black;
+    color: white;
 }
 
 .main-section1-section2 div div{
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
 }
 .main-section1-section2 div div a{
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+.main-section1-section2 div p{
+    text-align: center;
+}
+.section1-icon{
+    height: 50px;
+}
+.Section-Developers{
+    display: none;
+    flex-direction: column;
+    height: 25cm;
+    justify-content: space-around;
+    align-items: center;
+}
+.Section-Developers div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
     margin-left: 20px;
     margin-right: 20px;
+}
+.Section-Developers div .Card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 8cm;
+    height: 10cm;
+    border: 1px solid black;
+}
+.Section-Developers div .Card p{
+    text-align: center;
 }
 .main-section2{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 10cm;
-    background-color: beige;
+    background-color: black;
 }
 .main-section2 .MS-div1{
     display: flex;
@@ -130,14 +182,17 @@ main{
     justify-content: center;
     align-items: center;
     border: 1px solid black;
-    background-color: cornflowerblue;
+    background-image: url(https://www.eude.es/wp-content/uploads/2018/05/Dise%C3%B1o-sin-t%C3%ADtulo-2021-05-11T165120.480.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 8cm;
     width: 60%;
 }
 footer{
-    background-color: white;
+    background-color: black;
     display: flex;
     flex-direction: column;
+    color: white;
 }
 .footer-section1{
     margin-top: 20px;
@@ -167,6 +222,7 @@ footer{
     text-decoration: none;
     margin-top: 5px;
     margin-bottom: 5px;
+    color: white;
 }
 .Fs1-div1 .link{
     display: flex;
@@ -180,6 +236,7 @@ footer{
     text-decoration: none;
     margin-top: 5px;
     margin-bottom: 5px;
+    color: white;
 }
 .footer-section2{
     display: flex;
