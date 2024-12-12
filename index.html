@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UrpCinema</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -12,7 +15,7 @@
         <section class="header-section1">
             <div>
                 <img src="./src/Logo-empresa.jpg" alt="Logo de UrpCinema">
-                <h1>UrpCinema</h1>
+                <h1>UrpDev</h1>
             </div>
             <div class="header-section1-nav">
                 <nav>
@@ -38,13 +41,13 @@
                 <h1>Contact Us</h1>
             </div>
             <div>
-                <button>Home</button>/<button>Contact</button>
+                <button onclick="Contact_Company()">Contact Company</button>/<button onclick="Contact_Dev()">Contact Dev</button>
             </div>
         </section>
     </header>
     <main>
         <!--Section del formulario y elemnetos de contacto-->
-        <section class="main-section">
+        <section class="main-section" id="main_section">
             <!--section interna del formulario del formulario-->
             <section class="main-section1-section1">
                 <form action="">
@@ -78,18 +81,18 @@
                 <section class="main-section1-section2">
                     <div class="">
                         <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum vel ullam assumenda quibusdam sit. Cum, saepe. Error architecto deleniti minima, ab enim a odit odio delectus illum totam natus vero?
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. quibusdam sit. Cum, saepe. Error architecto deleniti minima, ab enim a odit odio delectus illum totam natus vero?
                         </p>
                     </div>
                     <div>
                         <div>
                         <a href="">
-                            <img src="" alt="Icono de Telefono">
+                            <img class="section1-icon" src="./icon/phone.png" alt="Icono de Telefono">
                             <h1>Phone Number</h1>
                             <p>843759348</p>
                         </a>
                         <a href="">
-                            <img src="" alt="Icono de Correo">
+                            <img class="section1-icon" src="./icon/email.png" alt="Icono de Correo">
                             <h1>Email Address</h1>
                             <p>Example@Email.com</p>
                         </a>
@@ -97,20 +100,64 @@
                         </div>
                         <div>
                             <a href="">
-                                <img src="" alt="Icono de Whatsapp">
+                                <img class="section1-icon" src="./icon/whatsapp (1).png" alt="Icono de Whatsapp">
                                 <h1>Whatsapp</h1>
                                 <p>889678689</p>
                             </a>
                             <a href="">
-                                <img src="" alt="Icono de ubicacion">
+                                <img class="section1-icon" src="./icon/location.png" alt="Icono de ubicacion">
                                 <h1>Our Office</h1>
                                 <p>Direccion del lugar</p>
                             </a>
                         </div>
                     </div>
-                    <iframe src="" frameborder="0"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14095.834444168706!2d-69.90909321672619!3d18.53728519306503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf88c76e0011cb%3A0xb7be13fbcb4dad9d!2sCentro%20Tecnologico%20Comunitario%20(CTC)%20La%20Nueva%20Barquita!5e0!3m2!1ses-419!2sdo!4v1733988846979!5m2!1ses-419!2sdo" width="452" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </section>
             </div>
+        </section>
+        <section>
+            <section class="Section-Developers" id="Section_Developers">
+                <div>
+                    <Div class="Card">
+                        <div><img src="" alt="Foto del Desarrollador"></div>
+                        <div><h1>Urpirio Moreno </h1></div>
+                        <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus culpa dicta iure, tempore eius nihil?</p></div>
+                        <div><a href=""><button>Contact</button></a></div>
+                    </Div>
+                    <Div class="Card" >
+                        <Div><img src="" alt="Foto del Desarrollador"></Div>
+                        <Div><h1>Yohandy</h1></Div>
+                        <Div><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil quaerat consectetur, culpa odio eius doloremque!</p></Div>
+                        <Div><a href=""><button>Contact</button></a></Div>
+                    </Div>
+                    <Div class="Card" >
+                        <div><img src="" alt="Foto del Desarrollador"></div>
+                        <div><h1>Nashla Sena</h1></div>
+                        <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus nihil in rerum iusto nisi esse?</p></div>
+                        <div><a href=""><button>Contact</button></a></div>
+                    </Div>
+                </div>
+                <div>
+                    <Div class="Card">
+                        <div><img src="" alt="Foto del Desarrollador"></div>
+                        <div><h1>Dioveny</h1></div>
+                        <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, sunt quia temporibus eligendi odio esse?</p></div>
+                        <div><a href=""><button>Contact</button></a></div>
+                    </Div>
+                    <Div class="Card" >
+                        <div><img src="" alt="Foto del Desarrollador"></div>
+                        <div><h1>Nelson Javier</h1></div>
+                        <div><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse assumenda est ex rerum, doloremque temporibus.</p></div>
+                        <div><a href=""><button>Contact</button></a></div>
+                    </Div>
+                    <Div class="Card" >
+                        <div><img src="" alt="Foto del Desarrollador"></div>
+                        <div><h1>Enmanuel batuce xd</h1></div>
+                        <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quod nulla nemo dolorem illo excepturi.</p></div>
+                        <div><a href=""><button>Contact</button></a></div>
+                    </Div>
+                </div>
+            </section>
         </section>
         <!--Section 2 de con la imagen mas boton-->
         <section class="main-section2">
@@ -133,7 +180,7 @@
             <div class="Fs1-div1">
                 <div class="img-l">
                     <img src="./src/Logo-empresa.jpg" alt="Logo de la empresa">
-                    <h1>UrpCinema</h1>
+                    <h1>UrpDev</h1>
                 </div>
                 <div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam illum debitis pariatur recusandae eveniet. Hic.</p>
@@ -179,5 +226,6 @@
             </div>
         </section>
     </footer>
+    <script src="index.js"></script>
 </body>
 </html>
