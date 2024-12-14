@@ -8,21 +8,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <header>
         <!--Section 1 del logo y navegacion-->
         <section class="header-section1">
             <div>
-                <img src="./src/Logo-empresa.jpg" alt="Logo de UrpCinema">
-                <h1>UrpDev</h1>
+                <h1>G4 Devs</h1>
             </div>
             <div class="header-section1-nav">
                 <nav>
                     <ul>
                         <li><a href="">Home</a></li>
                         <li><a href="">About Us</a></li>
-                        <li><a href="">Pages</a>
+                        <li><a href="">Servicios</a>
                             <ul>
                                 <li><a href="">Page one</a></li>
                                 <li><a href="">Page two</a></li>
@@ -31,17 +31,18 @@
                     </ul>
                 </nav>
                 <div>
-                    <a href=""><button>Contact Us</button></a>
+                    <a href=""><button>Contacto</button></a>
                 </div>
             </div>
         </section>
         <!--section 2 del header-->
         <section class="header-section2">
             <div>
-                <h1>Contact Us</h1>
+                <h1>Contacta con nosotros</h1>
             </div>
             <div>
-                <button onclick="Contact_Company()">Contact Company</button>/<button onclick="Contact_Dev()">Contact Dev</button>
+                <button id="Contact_Company" onclick="Contact_Company()">Contactar Empresa</button>/<button id="Contact_Dev" onclick="Contact_Dev()">
+                    Contactar desarrollador</button>
             </div>
         </section>
     </header>
@@ -50,26 +51,26 @@
         <section class="main-section" id="main_section">
             <!--section interna del formulario del formulario-->
             <section class="main-section1-section1">
+                
                 <form action="">
-                    <div>
-                        <h3>Contact Us</h3>
-                        <h1>Get in Touch</h1>
+                    <div class="form-div-title" >
+                            <h1>Contáctanos<br> y Resolvamos Juntos</h1>
                     </div>
                     <div>
-                        <label for="">name</label>
-                        <input type="text" name="" id="">
+                        <label for="Nombre">Nombre completo</label>
+                        <input type="text" name="" id="Nombre" placeholder="Ingresa tu Nombre">
                     </div>
                     <div>
-                        <label for="">Email</label>
-                        <input type="text" name="" id="">
+                        <label for="Email">Email</label>
+                        <input type="text" name="" id="Email" placeholder="Example@email.com">
                     </div>
                     <div>
-                        <label for="">Subject</label>
-                        <input type="text">
+                        <label for="Asunto">Asunto</label>
+                        <input type="text" id="Asunto" placeholder="Titulo">
                     </div>
                     <div>
-                        <label for="">Message</label>
-                        <textarea name="" id=""></textarea>
+                        <label for="Descripcion">Descripcion del Asunto</label>
+                        <textarea name="" id="Descripcion" placeholder="Escribe aqui"></textarea>
                     </div>
                     <div>
                         <button type="submit">Send Now</button>
@@ -79,35 +80,33 @@
             <!--Section de la infomacion de contacto-->
             <div class="div-section">
                 <section class="main-section1-section2">
-                    <div class="">
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. quibusdam sit. Cum, saepe. Error architecto deleniti minima, ab enim a odit odio delectus illum totam natus vero?
+                    <div>
+                        <p class="P">
+                            ¿Buscas nuestra dirección? Estamos aquí para recibirte. Consulta nuestra ubicación y planifica tu visita.
                         </p>
                     </div>
                     <div>
-                        <div>
+                        <!-- <div>
                         <a href="">
                             <img class="section1-icon" src="./icon/phone.png" alt="Icono de Telefono">
-                            <h1>Phone Number</h1>
-                            <p>843759348</p>
+                            <h1>+1(849)-514-1717</h1>
                         </a>
                         <a href="">
                             <img class="section1-icon" src="./icon/email.png" alt="Icono de Correo">
-                            <h1>Email Address</h1>
-                            <p>Example@Email.com</p>
+                            <h1>Example@Email.com</h1>
                         </a>
                             
-                        </div>
+                        </div> -->
                         <div>
-                            <a href="">
+                            <!-- <a href="">
                                 <img class="section1-icon" src="./icon/whatsapp (1).png" alt="Icono de Whatsapp">
                                 <h1>Whatsapp</h1>
-                                <p>889678689</p>
-                            </a>
+                                <p>+1(849)-514-1717</p>
+                            </a> -->
                             <a href="">
                                 <img class="section1-icon" src="./icon/location.png" alt="Icono de ubicacion">
-                                <h1>Our Office</h1>
-                                <p>Direccion del lugar</p>
+                                <h1>Nuestras oficionas</h1>
+                                <p>Sabana Perdida, Santo Domingo</p>
                             </a>
                         </div>
                     </div>
@@ -115,61 +114,120 @@
                 </section>
             </div>
         </section>
-        <section>
+        <section class="Gen-section-developers">
             <section class="Section-Developers" id="Section_Developers">
                 <div>
                     <Div class="Card">
-                        <div><img src="" alt="Foto del Desarrollador"></div>
-                        <div><h1>Urpirio Moreno </h1></div>
+                        <div><img class="Desarrollador-img" src="./src/Urpirio.jpeg" alt="Foto del Desarrollador"></div>
+                        <div><h1>Urpirio Junior M. </h1></div>
                         <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus culpa dicta iure, tempore eius nihil?</p></div>
                         <div><a href=""><button>Contact</button></a></div>
                     </Div>
                     <Div class="Card" >
-                        <Div><img src="" alt="Foto del Desarrollador"></Div>
+                        <Div><img class="Desarrollador-img" src="./src/yohandy.jpeg" alt="Foto del Desarrollador"></Div>
                         <Div><h1>Yohandy</h1></Div>
                         <Div><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil quaerat consectetur, culpa odio eius doloremque!</p></Div>
                         <Div><a href=""><button>Contact</button></a></Div>
                     </Div>
                     <Div class="Card" >
-                        <div><img src="" alt="Foto del Desarrollador"></div>
-                        <div><h1>Nashla Sena</h1></div>
+                        <div><img class="Desarrollador-img" src="./src/nashla.jpeg" alt="Foto del Desarrollador"></div>
+                        <div><h1>Nashla Sena </h1></div>
                         <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus nihil in rerum iusto nisi esse?</p></div>
                         <div><a href=""><button>Contact</button></a></div>
                     </Div>
                 </div>
                 <div>
                     <Div class="Card">
-                        <div><img src="" alt="Foto del Desarrollador"></div>
-                        <div><h1>Dioveny</h1></div>
+                        <div><img class="Desarrollador-img" src="./src/dioveny.jpeg" alt="Foto del Desarrollador"></div>
+                        <div><h1>Dioveny Garcia</h1></div>
                         <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, sunt quia temporibus eligendi odio esse?</p></div>
                         <div><a href=""><button>Contact</button></a></div>
                     </Div>
                     <Div class="Card" >
-                        <div><img src="" alt="Foto del Desarrollador"></div>
-                        <div><h1>Nelson Javier</h1></div>
+                        <div><img class="Desarrollador-img" src="./src/nelson.jpeg" alt="Foto del Desarrollador"></div>
+                        <div><h1>Nelson Javier H.</h1></div>
                         <div><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse assumenda est ex rerum, doloremque temporibus.</p></div>
                         <div><a href=""><button>Contact</button></a></div>
                     </Div>
                     <Div class="Card" >
-                        <div><img src="" alt="Foto del Desarrollador"></div>
+                        <div><img class="Desarrollador-img" src="./src/batuce.jpeg" alt="Foto del Desarrollador"></div>
                         <div><h1>Enmanuel batuce xd</h1></div>
                         <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quod nulla nemo dolorem illo excepturi.</p></div>
-                        <div><a href=""><button>Contact</button></a></div>
+                        <div><button>Contact</button></div>
                     </Div>
                 </div>
             </section>
+            <section class="developers-pop">
+                <!--Boton de salir del pop-->
+                <div class="Salir-developers-pop">
+                    <button><i class='bx bx-exit' ></i></button>
+                </div>
+
+
+
+               <div class="Gen-info-dev-pop">
+                 <!--Informacion del desarrollador-->
+                  <div class="Info-developers-pop">
+
+                    <div>
+                    <img class="Desarrollador-img" src="./src/Urpirio.jpeg" alt="Foto del desarrollador">
+                    </div>
+
+                    <div>
+                    <h1>Urpirio Junior M.</h1>
+                     </div>
+
+                  <div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste ut velit accusamus, nisi ipsa et.</p>
+                  </div>
+                <!--Icono de redes sociales-->
+                  <div class="Icono-developers-pop">
+                    <a href=""><img src="./icon/icono de githud.png" alt="Icono de Githud"></a>
+                    <a href=""><img src="./icon/instagram-white-icon.webp" alt="Icono de Instagram"></a>
+                    <a href=""><img src="./icon/icono de linkedin white.png" alt="Icono de Linkedin"></a>
+                  </div>
+
+                  </div>
+               <!--Formulario del desarrollador-->
+                 <div class="Formulario-developers">
+                 <form action="">
+                    <div>
+                        <h1>Formularion de contacto</h1>
+                    </div>
+                    <div>
+                        <label for="">Nombre completo</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label for="">Email</label>
+                        <input type="email">
+                    </div>
+                    <div>
+                        <label for="">Asunto</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <button type="submit">Enviar</button>
+                    </div>
+                  </form>
+                  </div>
+               </div>
+        </section>
         </section>
         <!--Section 2 de con la imagen mas boton-->
         <section class="main-section2">
             <div class="MS-div1">
-                <div>
-                    <h3>Hire Us Now</h3>
-                </div>
-                <div>
-                    <h1>We Are Always Ready to Take A Perfect Shot</h1>
-                </div>
-                <div>
-                    <button>Get started</button>
+                <img src="https://i.pinimg.com/736x/f1/37/b1/f137b1914b1b9358e9ff9c0a76b852f3.jpg" alt="background">
+                <div class="MS-div1-cont2" >
+                        <div>
+                            <h3>Explora Nuestros Proyectos</h3>
+                        </div>
+                        <div class="MS-div1-cont">
+                            <h1>Cada proyecto refleja nuestro compromiso con la innovación, calidad y creatividad. Descubre cómo nuestras soluciones han transformado ideas en realidades.</h1>
+                        </div>
+                        <div>
+                            <button>Explorar</button>
+                        </div>
                 </div>
             </div>
         </section>
@@ -178,22 +236,22 @@
         <!--section de -->
         <Section class="footer-section1">
             <div class="Fs1-div1">
-                <div class="img-l">
-                    <img src="./src/Logo-empresa.jpg" alt="Logo de la empresa">
-                    <h1>UrpDev</h1>
+                <div class="Fs1-div1-h">
+                    <h1>G4</h1>
+                    <h4>Dev</h4>
                 </div>
                 <div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam illum debitis pariatur recusandae eveniet. Hic.</p>
+                    <p>Somos un equipo apasionado por la tecnología, especializado en transformar ideas en soluciones digitales innovadoras. Juntos, creamos software funcional, eficiente y adaptado a tus necesidades.</p>
                 </div>
                <div class="link">
                 <a href="">
-                    <img src="" alt="icono de facebook">
+                    <img class="facebook" src="./icon/iconodeFacebook.webp" alt="icono de facebook">
                 </a>
                 <a href="">
-                    <img src="" alt="icono de X">
+                    <img class="Xred" src="./icon/twitter-new-logo-twitter-icons-new-twitter-logo-x-2023-x-social-media-icon-free-png.webp" alt="icono de X">
                 </a>
                 <a href="">
-                    <img src="" alt="Icono de youtube">
+                    <img class="youtube" src="./icon/youtube-logo-icone-bleue.png" alt="Icono de youtube">
                 </a>
                </div>
             </div>
@@ -213,10 +271,18 @@
                     <h3>Get in Touch</h3>
                 </div>
                 <div>
-                    <a href="">Direccion de la empresa</a>
-                    <a href="">NUmero cell</a>
-                    <a href="">numero Whatsapp</a>
-                    <a href="">Correo electronico</a>
+                    <a href="">
+                        <i class='bx bxs-map'></i>
+                        <span>Direccion de la empresa<</span>
+                    </a>
+                    <a href="">
+                        <i class='bx bx-phone' ></i>
+                        <span>NUmero cell</span> 
+                    </a>
+                    <a href="">
+                        <i class='bx bx-envelope' ></i>
+                        <span>Correo electronico</span>
+                    </a>
                 </div>
             </div>
         </Section>
