@@ -21,7 +21,7 @@
                 <nav>
                     <ul>
                         <li><a href="">Home</a></li>
-                        <li><a href="">About Us</a></li>
+                        <li><a href="">Sobre nosotros</a></li>
                         <li><a href="">Servicios</a>
                             <ul>
                                 <li><a href="">Page one</a></li>
@@ -41,8 +41,8 @@
                 <h1>Contacta con nosotros</h1>
             </div>
             <div>
-                <button id="Contact_Company" onclick="Contact_Company()">Contactar Empresa</button>/<button id="Contact_Dev" onclick="Contact_Dev()">
-                    Contactar desarrollador</button>
+                <button id="Contact_Company" onclick="Contact_Company()">Contactar Empresa</button>/
+                <button id="Contact_Dev" onclick="Contact_Dev()">Contactar desarrollador</button>
             </div>
         </section>
     </header>
@@ -73,7 +73,7 @@
                         <textarea name="" id="Descripcion" placeholder="Escribe aqui"></textarea>
                     </div>
                     <div>
-                        <button type="submit">Send Now</button>
+                        <button type="submit">Enviar</button>
                     </div>
                 </form>
             </section>
@@ -104,7 +104,7 @@
                                 <p>+1(849)-514-1717</p>
                             </a> -->
                             <a href="">
-                                <img class="section1-icon" src="./icon/location.png" alt="Icono de ubicacion">
+                                <i class='bx bx-map' ></i>
                                 <h1>Nuestras oficionas</h1>
                                 <p>Sabana Perdida, Santo Domingo</p>
                             </a>
@@ -121,19 +121,19 @@
                         <div><img class="Desarrollador-img" src="./src/Urpirio.jpeg" alt="Foto del Desarrollador"></div>
                         <div><h1>Urpirio Junior M. </h1></div>
                         <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus culpa dicta iure, tempore eius nihil?</p></div>
-                        <div><a href=""><button>Contact</button></a></div>
+                        <div><button onclick="Urpirio()">Contactar</button></div>
                     </Div>
                     <Div class="Card" >
                         <Div><img class="Desarrollador-img" src="./src/yohandy.jpeg" alt="Foto del Desarrollador"></Div>
                         <Div><h1>Yohandy</h1></Div>
                         <Div><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil quaerat consectetur, culpa odio eius doloremque!</p></Div>
-                        <Div><a href=""><button>Contact</button></a></Div>
+                        <Div><button onclick="Yohandy()">Contactar</button></Div>
                     </Div>
                     <Div class="Card" >
                         <div><img class="Desarrollador-img" src="./src/nashla.jpeg" alt="Foto del Desarrollador"></div>
                         <div><h1>Nashla Sena </h1></div>
                         <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus nihil in rerum iusto nisi esse?</p></div>
-                        <div><a href=""><button>Contact</button></a></div>
+                        <div><button onclick="Nashla()" >Contactar</button></div>
                     </Div>
                 </div>
                 <div>
@@ -141,26 +141,30 @@
                         <div><img class="Desarrollador-img" src="./src/dioveny.jpeg" alt="Foto del Desarrollador"></div>
                         <div><h1>Dioveny Garcia</h1></div>
                         <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, sunt quia temporibus eligendi odio esse?</p></div>
-                        <div><a href=""><button>Contact</button></a></div>
+                        <div><button onclick="Dioveny()" >Contactar</button></div>
                     </Div>
                     <Div class="Card" >
                         <div><img class="Desarrollador-img" src="./src/nelson.jpeg" alt="Foto del Desarrollador"></div>
                         <div><h1>Nelson Javier H.</h1></div>
                         <div><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse assumenda est ex rerum, doloremque temporibus.</p></div>
-                        <div><a href=""><button>Contact</button></a></div>
+                        <div><button onclick="Nelson()" >Contactar</button></div>
                     </Div>
                     <Div class="Card" >
                         <div><img class="Desarrollador-img" src="./src/batuce.jpeg" alt="Foto del Desarrollador"></div>
                         <div><h1>Enmanuel batuce xd</h1></div>
                         <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quod nulla nemo dolorem illo excepturi.</p></div>
-                        <div><button>Contact</button></div>
+                        <div><button onclick="enmanuel()">Contactar</button></div>
                     </Div>
                 </div>
             </section>
-            <section class="developers-pop">
+<!--Venta deplegable del contacto de los desarrolladores-->
+
+
+
+            <section class="developers-pop" id="Urpirio">
                 <!--Boton de salir del pop-->
                 <div class="Salir-developers-pop">
-                    <button><i class='bx bx-exit' ></i></button>
+                    <button onclick="Salir()"><i class='bx bx-exit' ></i></button>
                 </div>
 
 
@@ -182,9 +186,9 @@
                   </div>
                 <!--Icono de redes sociales-->
                   <div class="Icono-developers-pop">
-                    <a href=""><img src="./icon/icono de githud.png" alt="Icono de Githud"></a>
-                    <a href=""><img src="./icon/instagram-white-icon.webp" alt="Icono de Instagram"></a>
-                    <a href=""><img src="./icon/icono de linkedin white.png" alt="Icono de Linkedin"></a>
+                    <a href=""><i class='bx bxl-github' ></i></a>
+                    <a href=""><i class='bx bxl-instagram-alt' ></i></a>
+                    <a href=""><i class='bx bxl-linkedin-square' ></i></a>
                   </div>
 
                   </div>
@@ -212,7 +216,308 @@
                   </form>
                   </div>
                </div>
-        </section>
+            </section>
+
+
+
+
+
+            <section class="developers-pop" id="Yohandy">
+                <!--Boton de salir del pop-->
+                <div class="Salir-developers-pop">
+                    <button onclick="Salir()"><i class='bx bx-exit' ></i></button>
+                </div>
+
+
+
+               <div class="Gen-info-dev-pop">
+                 <!--Informacion del desarrollador-->
+                  <div class="Info-developers-pop">
+
+                    <div>
+                    <img class="Desarrollador-img" src="./src/yohandy.jpeg" alt="Foto del desarrollador">
+                    </div>
+
+                    <div>
+                    <h1>Yohandy</h1>
+                     </div>
+
+                  <div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste ut velit accusamus, nisi ipsa et.</p>
+                  </div>
+                <!--Icono de redes sociales-->
+                  <div class="Icono-developers-pop">
+                    <a href=""><i class='bx bxl-github' ></i></a>
+                    <a href=""><i class='bx bxl-instagram-alt' ></i></a>
+                    <a href=""><i class='bx bxl-linkedin-square' ></i></a>
+                  </div>
+
+                  </div>
+               <!--Formulario del desarrollador-->
+                 <div class="Formulario-developers">
+                 <form action="">
+                    <div>
+                        <h1>Formularion de contacto</h1>
+                    </div>
+                    <div>
+                        <label for="">Nombre completo</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label for="">Email</label>
+                        <input type="email">
+                    </div>
+                    <div>
+                        <label for="">Asunto</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <button type="submit">Enviar</button>
+                    </div>
+                  </form>
+                  </div>
+               </div>
+            </section>
+
+
+
+<!--Pop-Up de Nashla-->
+
+            <section class="developers-pop" id="Nashla">
+                <!--Boton de salir del pop-->
+                <div class="Salir-developers-pop">
+                    <button onclick="Salir()"><i class='bx bx-exit' ></i></button>
+                </div>
+
+
+
+               <div class="Gen-info-dev-pop">
+                 <!--Informacion del desarrollador-->
+                  <div class="Info-developers-pop">
+
+                    <div>
+                    <img class="Desarrollador-img" src="./src/nashla.jpeg" alt="Foto del desarrollador">
+                    </div>
+
+                    <div>
+                    <h1>Nashla Sena</h1>
+                     </div>
+
+                  <div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste ut velit accusamus, nisi ipsa et.</p>
+                  </div>
+                <!--Icono de redes sociales-->
+                  <div class="Icono-developers-pop">
+                    <a href=""><i class='bx bxl-github' ></i></a>
+                    <a href=""><i class='bx bxl-instagram-alt' ></i></a>
+                    <a href=""><i class='bx bxl-linkedin-square' ></i></a>
+                  </div>
+
+                  </div>
+               <!--Formulario del desarrollador-->
+                 <div class="Formulario-developers">
+                 <form action="">
+                    <div>
+                        <h1>Formularion de contacto</h1>
+                    </div>
+                    <div>
+                        <label for="">Nombre completo</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label for="">Email</label>
+                        <input type="email">
+                    </div>
+                    <div>
+                        <label for="">Asunto</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <button type="submit">Enviar</button>
+                    </div>
+                  </form>
+                  </div>
+               </div>
+            </section>
+
+<!--Pop-Up de Dioveny-->
+
+            <section class="developers-pop" id="Dioveny">
+                <!--Boton de salir del pop-->
+                <div class="Salir-developers-pop">
+                    <button onclick="Salir()"><i class='bx bx-exit' ></i></button>
+                </div>
+
+
+
+               <div class="Gen-info-dev-pop">
+                 <!--Informacion del desarrollador-->
+                  <div class="Info-developers-pop">
+
+                    <div>
+                    <img class="Desarrollador-img" src="./src/dioveny.jpeg" alt="Foto del desarrollador">
+                    </div>
+
+                    <div>
+                    <h1>Dioveny Garcia</h1>
+                     </div>
+
+                  <div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste ut velit accusamus, nisi ipsa et.</p>
+                  </div>
+                <!--Icono de redes sociales-->
+                  <div class="Icono-developers-pop">
+                    <a href=""><i class='bx bxl-github' ></i></a>
+                    <a href=""><i class='bx bxl-instagram-alt' ></i></a>
+                    <a href=""><i class='bx bxl-linkedin-square' ></i></a>
+                  </div>
+
+                  </div>
+               <!--Formulario del desarrollador-->
+                 <div class="Formulario-developers">
+                 <form action="">
+                    <div>
+                        <h1>Formularion de contacto</h1>
+                    </div>
+                    <div>
+                        <label for="">Nombre completo</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label for="">Email</label>
+                        <input type="email">
+                    </div>
+                    <div>
+                        <label for="">Asunto</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <button type="submit">Enviar</button>
+                    </div>
+                  </form>
+                  </div>
+               </div>
+            </section>
+
+
+<!--Pop-Up de javier-->
+
+            <section class="developers-pop" id="Nelson">
+                <!--Boton de salir del pop-->
+                <div class="Salir-developers-pop">
+                    <button onclick="Salir()"><i class='bx bx-exit' ></i></button>
+                </div>
+
+
+
+               <div class="Gen-info-dev-pop">
+                 <!--Informacion del desarrollador-->
+                  <div class="Info-developers-pop">
+
+                    <div>
+                    <img class="Desarrollador-img" src="./src/nelson.jpeg" alt="Foto del desarrollador">
+                    </div>
+
+                    <div>
+                    <h1>Nelson Javier H.</h1>
+                     </div>
+
+                  <div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste ut velit accusamus, nisi ipsa et.</p>
+                  </div>
+                <!--Icono de redes sociales-->
+                  <div class="Icono-developers-pop">
+                    <a href=""><i class='bx bxl-github' ></i></a>
+                    <a href=""><i class='bx bxl-instagram-alt' ></i></a>
+                    <a href=""><i class='bx bxl-linkedin-square' ></i></a>
+                  </div>
+
+                  </div>
+               <!--Formulario del desarrollador-->
+                 <div class="Formulario-developers">
+                 <form action="">
+                    <div>
+                        <h1>Formularion de contacto</h1>
+                    </div>
+                    <div>
+                        <label for="">Nombre completo</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label for="">Email</label>
+                        <input type="email">
+                    </div>
+                    <div>
+                        <label for="">Asunto</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <button type="submit">Enviar</button>
+                    </div>
+                  </form>
+                  </div>
+               </div>
+            </section>
+
+
+
+<!--Pop-Up de enmanuel-->
+            <section class="developers-pop" id="enmanuel">
+                <!--Boton de salir del pop-->
+                <div class="Salir-developers-pop">
+                    <button onclick="Salir()"><i class='bx bx-exit' ></i></button>
+                </div>
+
+
+
+               <div class="Gen-info-dev-pop">
+                 <!--Informacion del desarrollador-->
+                  <div class="Info-developers-pop">
+
+                    <div>
+                    <img class="Desarrollador-img" src="./src/batuce.jpeg" alt="Foto del desarrollador">
+                    </div>
+
+                    <div>
+                    <h1>Enmanuel batuce</h1>
+                     </div>
+
+                  <div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste ut velit accusamus, nisi ipsa et.</p>
+                  </div>
+                <!--Icono de redes sociales-->
+                  <div class="Icono-developers-pop">
+                    <a href=""><i class='bx bxl-github' ></i></a>
+                    <a href=""><i class='bx bxl-instagram-alt' ></i></a>
+                    <a href=""><i class='bx bxl-linkedin-square' ></i></a>
+                  </div>
+
+                  </div>
+               <!--Formulario del desarrollador-->
+                 <div class="Formulario-developers">
+                 <form action="">
+                    <div>
+                        <h1>Formularion de contacto</h1>
+                    </div>
+                    <div>
+                        <label for="">Nombre completo</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label for="">Email</label>
+                        <input type="email">
+                    </div>
+                    <div>
+                        <label for="">Asunto</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <button type="submit">Enviar</button>
+                    </div>
+                  </form>
+                  </div>
+               </div>
+            </section>
         </section>
         <!--Section 2 de con la imagen mas boton-->
         <section class="main-section2">
@@ -244,45 +549,42 @@
                     <p>Somos un equipo apasionado por la tecnología, especializado en transformar ideas en soluciones digitales innovadoras. Juntos, creamos software funcional, eficiente y adaptado a tus necesidades.</p>
                 </div>
                <div class="link">
-                <a href="">
-                    <img class="facebook" src="./icon/iconodeFacebook.webp" alt="icono de facebook">
-                </a>
-                <a href="">
-                    <img class="Xred" src="./icon/twitter-new-logo-twitter-icons-new-twitter-logo-x-2023-x-social-media-icon-free-png.webp" alt="icono de X">
-                </a>
-                <a href="">
-                    <img class="youtube" src="./icon/youtube-logo-icone-bleue.png" alt="Icono de youtube">
-                </a>
+                <a href=""><i class='bx bxl-github' ></i></a>
+                <a href=""><i class='bx bxl-instagram-alt' ></i></a>
+                <a href=""><i class='bx bxl-linkedin-square' ></i></a>
+                <a href=""><i class='bx bxl-youtube' ></i></a>
                </div>
             </div>
-            <div class="Fs1-div2">
-                <div>
-                    <h1>Our Store</h1>
+            <div class="Fs1-div2-gen">
+                <div class="Fs1-div2">
+                    <div>
+                        <h1>Menu</h1>
+                    </div>
+                    <div>
+                        <a href="">Home</a>
+                        <a href="">About</a>
+                        <a href="">Service</a>
+                        <a href="">Contact</a>
+                    </div>
                 </div>
-                <div>
-                    <a href="">Home</a>
-                    <a href="">About</a>
-                    <a href="">Service</a>
-                    <a href="">Contact</a>
-                </div>
-            </div>
-            <div class="Fs1-div3">
-                <div>
-                    <h3>Get in Touch</h3>
-                </div>
-                <div>
-                    <a href="">
-                        <i class='bx bxs-map'></i>
-                        <span>Direccion de la empresa<</span>
-                    </a>
-                    <a href="">
-                        <i class='bx bx-phone' ></i>
-                        <span>NUmero cell</span> 
-                    </a>
-                    <a href="">
-                        <i class='bx bx-envelope' ></i>
-                        <span>Correo electronico</span>
-                    </a>
+                <div class="Fs1-div3">
+                    <div>
+                        <h3>Contacta con nosotros</h3>
+                    </div>
+                    <div>
+                        <a href="">
+                            <i class='bx bxs-map'></i>
+                            <span>Direccion de la empresa</span>
+                        </a>
+                        <a href="">
+                            <i class='bx bx-phone' ></i>
+                            <span>NUmero cell</span> 
+                        </a>
+                        <a href="">
+                            <i class='bx bx-envelope' ></i>
+                            <span>Correo electronico</span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </Section>
