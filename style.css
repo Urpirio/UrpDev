@@ -47,10 +47,7 @@ header{
     margin-left: 20px;
     margin-right: 20px;
 }
-.header-section1 div img{
-    height: 50px;
-    border-radius: 10px;
-}
+
 .header-section1-nav{
     display: flex;
     justify-content: space-between;
@@ -64,7 +61,22 @@ header{
     font-size: 16px;
     font-weight: 600;
     color: white;
-    background-color: #083d77;
+    background: linear-gradient(-90deg,#0096c7,#0077b6,#023e8a,#0077b6,#0096c7);
+    background-size: 500%;
+    animation: color2 10s linear infinite;
+    transition: 300ms;
+}
+.header-section1-nav div a button:hover{
+    height: 1.1cm;
+    width: 4.1cm;
+    font-size: 20px;
+    border: 2px solid #0077b6;
+    background: linear-gradient(-90deg,#0096c7,#023e8a,#0077b6,#0096c7);
+    background-clip: text;
+    color: transparent;
+    background-size: 500%;
+    animation: color2 3s linear infinite;
+    
 }
 .header-section1 div nav ul{
     list-style: none;
@@ -102,8 +114,21 @@ header{
     border: none;
     background: none;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 550;
     color: white;
+    transition: 300ms;
+}
+.header-section2 div button:hover{
+    font-size: 22px;
+    font-weight: 600;
+    opacity: 0.8;
+
+}
+#Contact_Company{
+    border-bottom: 2px solid white;
+}
+#Contact_Dev{
+    opacity: 0.5;
 }
 main{
     display: flex;
@@ -130,11 +155,20 @@ main{
     background-color: #2b2c28;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
-    border-radius: 5px;
+    border: 2px solid #0077b6;
+    border-radius: 20px;
     height: 18cm;
     width: 12cm;
     color: white;
+    animation: form-Company 1s;
+}
+@keyframes form-Company {
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0%);
+    }
 }
 .form-div-title{
     display: flex;
@@ -165,21 +199,26 @@ main{
     width: 10cm;
     margin-top: 5px;
     margin-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
     font-size: 16px;
     color: white;
-    outline-color: #083d77;
-    border: 1px solid gray;
+    outline: none;
+    outline-color: none;
+    border: 1px solid #0077b6;
+    border-radius: 5px;
     background-color: #373933;
 }
 .main-section1-section1 form div textarea{
     height: 4cm;
-    width: 10cm;
+    width: 10.5cm;
     margin-top: 5px;
     margin-bottom: 5px;
     font-size: 16px;
     color: white;
     outline-color: #083d77;
-    border: 1px solid gray;
+    border: 1px solid #0077b6;
+    border-radius: 5px;
     background-color: #373933;
 }
 .main-section1-section1 form div button{
@@ -190,7 +229,31 @@ main{
     font-size: 1.3em;
     font-weight: 600;
     color: white;
-    background-color: #083d77;
+    background: linear-gradient(-90deg,#0096c7,#023e8a,#0096c7);
+    background-size: 500%;
+    animation: color2 3s linear infinite;
+    transition: 300ms;
+}
+.main-section1-section1 form div button:hover{
+    height: 1.3cm;
+    width: 10.1cm;
+    border: 3px solid #0077b6;
+    font-size: 1.4em;
+    font-weight: 600;
+    transform: translateY(-10px);
+    background: linear-gradient(90deg,white,#0096c7,#023e8a,#0096c7);
+    background-size: 500%;
+    background-clip: text;
+    color: transparent;
+    animation: color2 8s linear infinite;
+}
+@keyframes color2 {
+    from{
+        background-position: 0% 250%;
+    }
+    to{
+        background-position: 250% 500%;
+    }
 }
 .div-section{
     width: 50%;
@@ -229,6 +292,9 @@ main{
     text-decoration: none;
     color: white;
 }
+.main-section1-section2 div a i{
+    font-size: 80px;
+}
 .main-section1-section2 div .P{
     text-align: center;
     font-size: 22px;
@@ -237,9 +303,7 @@ main{
     margin: 0;
     margin-bottom: 10px;
 }
-.section1-icon{
-    height: 50px;
-}
+
 .Gen-section-developers{
     display: flex;
     flex-direction: column;
@@ -271,21 +335,35 @@ main{
     width: 8cm;
     height: 10cm;
     background-color: #2b2c28;
-    border: 1px solid black;
+    border: 2px solid #0077b6;
     border-radius: 20px;
     color: white;
 }
-.Section-Developers div .Card p{
+.Card p{
     text-align: center;
 }
-.Section-Developers div .Card div  button{
+.Card div  button{
     height: 0.8cm;
     width: 3cm;
     border-radius: 15px;
     border: none;
     font-size: 15px;
     font-weight: 600;
-    background-color: #083d77;
+    color: white;
+    background: linear-gradient(-90deg,#0096c7,#023e8a,#0096c7);
+    background-size: 500%;
+    animation: color2 3s linear infinite;
+    transition: 300ms;
+}
+.Card div  button:hover{
+    height: 0.9cm;
+    width: 3.1cm;
+    background: linear-gradient(-90deg, white,#0096c7,#023e8a,#0096c7,white);
+    background-clip: text;
+    background-size: 500%;
+    color: transparent;
+    border: 2px solid #0077b6;
+    animation: color2 3s linear infinite;
 }
 .Desarrollador-img{
     height: 150px;
@@ -297,9 +375,19 @@ main{
     background-color: #0a0908;
     border: 2px solid white;
     border-radius: 20px;
-    display: flex;
-    flex-direction: column
+    display: none;
+    flex-direction: column;
+    animation: Pop-Up 1s;
 }
+@keyframes Pop-Up {
+    from{
+        transform: translateY(-100%);
+    }
+    to{
+        transform: translateY(0%);
+    }
+}
+
 .Salir-developers-pop{
     display: flex;
     justify-content: end;
@@ -309,10 +397,18 @@ main{
 .Salir-developers-pop button{
     background: none;
     border: none;
+    
 }
 .Salir-developers-pop button i{
     font-size: 30px;
     color: white;
+    color: #0077b6;
+    font-weight: 800;
+    transition: 300ms;
+}
+.Salir-developers-pop button i:hover{
+    font-size: 35px;
+    transform: translateY(5px);
 }
 .Gen-info-dev-pop{
     display: flex;
@@ -329,15 +425,41 @@ main{
     align-items: center;
     color: white;
 }
+.Info-developers-pop div{
+    animation: Info-devs2 0.7s;
+}
+@keyframes Info-devs2  {
+    from{
+        opacity: 0;
+        transform: translateY(10cm);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+}
 .Info-developers-pop div h1{
     font-size: 25px;
     margin: 0;
+    animation: Info-devs 0.7s;
 }
 .Info-developers-pop div p{
     text-align: center;
+    animation: Info-devs 1s;
+}
+@keyframes Info-devs {
+    from{
+        opacity: 0;
+        transform: translateX(-4cm);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 .Formulario-developers{
-    height: 80%;
+    height: 90%;
     width: 40%;
     display: flex;
     justify-content: center;
@@ -345,14 +467,29 @@ main{
     background-color: #2b2c28;
    border-top-left-radius: 20px;
    border-bottom-left-radius: 20px;
+   border-left: 2px solid #0077b6;
+   border-top: 2px solid #0077b6;
+   border-bottom: 2px solid #0077b6;
+   animation: Form-devs 0.5s;
 }
 .Formulario-developers form{
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: white;
+}
+@keyframes Form-devs {
+    from{
+        opacity: 0;
+        height: 0;
+        width: 0;
+    }
+    to{
+        opacity: 1;
+        height: 90%;
+        width: 40%;
+    }
 }
 .Formulario-developers form div{
     display: flex;
@@ -363,29 +500,69 @@ main{
 .Formulario-developers form div h1{
     font-size: 25px;
 }
+.Formulario-developers form div label{
+    font-size: 16px;
+    font-weight: 500;
+}
 .Formulario-developers form div input{
     height: 0.6cm;
     width: 6cm;
+    color: white;
     background-color: #373933;
-    border: 1px solid gray;
-    outline-color: #023e8a;
+    border: 1px solid #0077b6;
+    outline-color:#0077b6;
+    outline-width: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 5px;
 }
+
 .Formulario-developers form div button{
     height: 0.8cm;
     width: 4cm;
+    color: white;
     font-size: 14px;
     font-weight: 600;
     border: none;
     border-radius: 10px;
-    background-color: #0077b6;
+    background: linear-gradient(-90deg,#0096c7,#023e8a,#0096c7);
+    background-size: 500%;
+    animation: color2 8s linear infinite;
     margin-top: 10px;
+    transition: 300ms;
 }
-.Icono-developers-pop a{
-    margin-left: 5px;
-    margin-right: 5px;
+.Formulario-developers form div button:hover{
+    height: 0.9cm;
+    width: 4.1cm;
+    font-size: 15px;
+    background: linear-gradient(-90deg, white,#0096c7,#023e8a,#0096c7,white);
+    background-clip: text;
+    background-size: 500%;
+    color: transparent;
+    border: 3px solid #0077b6;
+    animation: color2 3s linear infinite;
 }
-.Icono-developers-pop img{
-    height: 30px;
+.Icono-developers-pop a i{
+    font-size: 40px;
+    background: linear-gradient(#023e8a,#0096c7);
+    background-clip: text;
+    color: transparent;
+    transition: 300ms;
+    animation: Form-Devs-Icon 0.5s;
+}
+.Icono-developers-pop a i:hover{
+    font-size: 50px;
+    transform: translateY(2px);
+}
+@keyframes Form-Devs-Icon {
+    from{
+        opacity: o;
+        transform: translateY(4cm);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .main-section2{
@@ -481,38 +658,52 @@ footer{
 .Fs1-div1 div p{
     margin: 0;
     margin-bottom: 10px;
+    font-weight: 400;
+}
+.Fs1-div2-gen{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
 }
 .Fs1-div2 div{
     display: flex;
     flex-direction: column;
+}
+.Fs1-div2 div h1{
+    color: #0077b6;
+    font-size: 25px;
 }
 .Fs1-div2 div a{
     text-decoration: none;
     margin-top: 5px;
     margin-bottom: 5px;
     color: white;
+    transition: 300ms;
+}
+.Fs1-div2 div a:hover{
+    color: #0077b6;
+    font-size: 18px;
 }
 .Fs1-div1 .link{
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-.Fs1-div1 .link a{
-    margin-left: 10px;
-    margin-right: 10px;
+
+.Fs1-div1 .link a i{
+    font-size: 30px;
+    color: #0077b6;
+    transition: 300ms;
+}
+.Fs1-div1 .link a i:hover{
+    font-size: 40px;
+    transform: translateY(-1px);
 }
 .link a{
     align-items: center;
 }
-.facebook{
-    border-radius: 10px;height: 35px;
-}
-.Xred{
-    height: 45px;
-}
-.youtube{
-    height: 47px;
-}
+
 i{
     font-size: 25px;
     margin-right: 10px;
@@ -521,6 +712,10 @@ i{
     display: flex;
     flex-direction: column;
 }
+.Fs1-div3 div h3{
+    font-size: 25px;
+    color: #0077b6;
+}
 .Fs1-div3 div a{
     display: flex;
     align-items: center;
@@ -528,9 +723,11 @@ i{
     margin-top: 5px;
     margin-bottom: 5px;
     color: white;
+    transition: 300ms;
 }
 .Fs1-div3 div a:hover{
-    color: #083d77;
+    font-size: 18px;
+    color: #0077b6;
 }
 .footer-section2{
     display: flex;
